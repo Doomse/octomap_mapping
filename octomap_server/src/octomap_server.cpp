@@ -1366,9 +1366,9 @@ rcl_interfaces::msg::SetParametersResult OctomapServer::onParameter(
   update_param(parameters, "filter_ground_plane", filter_ground_plane_);
   update_param(parameters, "compress_map", compress_map_);
   update_param(parameters, "incremental_2D_projection", incremental_2D_projection_);
-  update_param(parameters, "ground_filter_distance", ground_filter_distance_);
-  update_param(parameters, "ground_filter_angle", ground_filter_angle_);
-  update_param(parameters, "ground_filter_plane_distance", ground_filter_plane_distance_);
+  update_param(parameters, "ground_filter.distance", ground_filter_distance_);
+  update_param(parameters, "ground_filter.angle", ground_filter_angle_);
+  update_param(parameters, "ground_filter.plane_distance", ground_filter_plane_distance_);
   update_param(parameters, "sensor_model.max_range", max_range_);
   double sensor_model_min{get_parameter("sensor_model.min").as_double()};
   update_param(parameters, "sensor_model.min", sensor_model_min);
